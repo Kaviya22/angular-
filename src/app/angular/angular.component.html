@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="name" #name1/>{{name}}
+<br>
+<input type="number" [(ngModel)]="age" #age1/>{{age}}
+<br>
+<input type="text" [(ngModel)]="gender" #gender1/>{{gender}}
+<br>
+<input type="email" [(ngModel)]="email" #email1/>{{email}}
+<br><br>
+<button (click)="onclick(name1.value,age1.value,gender1.value,email1.value)">submit</button>
+
+

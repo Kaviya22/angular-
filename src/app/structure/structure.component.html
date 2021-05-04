@@ -1,0 +1,17 @@
+<h2 *ngIf="true">happy</h2>
+
+<div *ngFor="let num of item">
+    <h2>{{num}}</h2>
+ </div>
+<div *ngFor="let num of item;odd as o">
+    <h2>{{o}}{{num}}</h2>
+</div>
+
+<div [ngSwitch]="'one'">
+<div *ngSwitchCase="'one'">one displayed</div>
+<div *ngSwitchCase="'two'">two displayed</div>
+</div>
+
+
+
+
